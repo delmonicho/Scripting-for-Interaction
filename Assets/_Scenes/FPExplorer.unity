@@ -1001,6 +1001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113610064}
   - component: {fileID: 113610063}
+  - component: {fileID: 113610065}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1034,7 +1035,7 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard and Mouse
   m_DefaultActionMap: Gamplay Controls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -1055,6 +1056,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &113610065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113610062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d27b59027e122a94181ed03e43a334cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  deltaX: 0
+  deltaY: 0
+  xRot: 0
+  yRot: 0
+  sensitivity: 0
 --- !u!1 &120259411
 GameObject:
   m_ObjectHideFlags: 0
@@ -7019,9 +7038,10 @@ GameObject:
   - component: {fileID: 764269419}
   - component: {fileID: 764269421}
   - component: {fileID: 764269420}
+  - component: {fileID: 764269422}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7100,6 +7120,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &764269422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764269418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ae8abb0c3d1ed349a0a4b8bb7832431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &787131049
 GameObject:
   m_ObjectHideFlags: 0
