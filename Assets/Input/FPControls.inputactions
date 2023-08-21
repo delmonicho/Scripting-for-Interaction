@@ -1,0 +1,71 @@
+{
+    "name": "FPControls",
+    "maps": [
+        {
+            "name": "Gamplay Controls",
+            "id": "6bfc4a0a-f3c0-40ab-98f5-936ac60ca3da",
+            "actions": [
+                {
+                    "name": "CameraLook",
+                    "type": "Button",
+                    "id": "89167fe2-8636-4a6f-a1de-0b5ec4834375",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PlayerMove",
+                    "type": "Button",
+                    "id": "c4d23e2d-d1b2-4b10-a0aa-d0724bdcc845",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7c8809f3-2fb3-4e7a-ab6a-388350f98de8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "12043d4c-c208-476d-b5a4-41c27c267427",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlayerMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard and Mouse",
+            "bindingGroup": "Keyboard and Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
