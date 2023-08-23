@@ -8,16 +8,25 @@ public class FirstPersonMovement : MonoBehaviour
     public Vector3 direction;
     public float speed;
 
+    public Rigidbody rb;    // The player's rigidbody
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
+    // FixedUpdate is called at fixed intervals
+    // All physics calculations happen in FixedUpdate
+    void FixedUpdate()
     {
-        transform.Translate(direction * speed * Time.deltaTime);    
+        // transform.Translate(direction * speed * Time.deltaTime);    
+        // need to configure movement to localDirection as opposed to default world direction
+
+        Vector3 localDirection = transform.TransformDirection(direction);
+        // move using physics
+        rb.MovePosition(rb.position + (localDirection * speed * Time.deltaTime));
     }
 
     // OnPlayerMove event handler
