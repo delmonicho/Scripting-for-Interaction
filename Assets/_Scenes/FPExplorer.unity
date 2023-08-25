@@ -10607,7 +10607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementAxis: {x: 1, y: 0, z: 0}
   distance: 1.5
-  frames: 50
+  frames: 120
 --- !u!1 &1114289815
 GameObject:
   m_ObjectHideFlags: 0
@@ -20594,7 +20594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementAxis: {x: -1, y: 0, z: 0}
   distance: 1.5
-  frames: 50
+  frames: 120
 --- !u!1 &2057750425
 GameObject:
   m_ObjectHideFlags: 0

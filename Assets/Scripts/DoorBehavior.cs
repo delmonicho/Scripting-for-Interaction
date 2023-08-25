@@ -32,7 +32,7 @@ public class DoorBehavior : MonoBehaviour
 
         //Fix door jump glitch by stopping already running coroutines and startin from current position
         StopAllCoroutines(); //add to stop previously running coroutines
-        StartCoroutine(DoorMove(transform.position, closedPos, 1 / frames)); //What's the bug here, can you solve it?
+        StartCoroutine(MoveDoor(transform.position, closedPos, 1 / frames)); //What's the bug here, can you solve it?
     }
 
     public void OpenGate()
@@ -45,10 +45,10 @@ public class DoorBehavior : MonoBehaviour
 
         //Fix door jump glitch by stopping already running coroutines and startin from current position
         StopAllCoroutines();
-        StartCoroutine(DoorMove(transform.position, openPos, 1 / frames)); //What's the bug here, can you solve it?
+        StartCoroutine(MoveDoor(transform.position, openPos, 1 / frames)); //What's the bug here, can you solve it?
     }
 
-    IEnumerator DoorMove(Vector3 startPos, Vector3 endPos, float step)
+    IEnumerator MoveDoor(Vector3 startPos, Vector3 endPos, float step)
     {
         for(float i = 0; i <= 1f; i += step)
         {
